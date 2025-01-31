@@ -9,6 +9,8 @@ import { CreateComponent } from './components/create/create.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
+import { routes } from './app.routes';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ErrorComponent } from './components/error/error.component';
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([]),
+    RouterModule.forRoot(routes),
+
+    
   ],
   providers: [
     provideHttpClient() // Configuración correcta para HttpClient

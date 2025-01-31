@@ -2,19 +2,16 @@
   <div class="content">
     <div></div>
     <div class="left-side">
-      <h1>Welcome to my Portafolio !!!</h1>
-     
-   
-
-      <!-- Navigation Menu -->
+      <h1>{{ title }}</h1>
       <ul>
         <li><a [routerLink]="['/about-me']" routerLinkActive="active">About me</a></li>
         <li><a [routerLink]="['/projects']" routerLinkActive="active">Projects</a></li>
         <li><a [routerLink]="['/create']" routerLinkActive="active">Create</a></li>
         <li><a [routerLink]="['/contact']" routerLinkActive="active">Contact</a></li>
-        
-        
       </ul>
     </div>
+
+    <!-- Aquí se renderizan los componentes según la ruta -->
+    <router-outlet></router-outlet>
   </div>
 </main>
