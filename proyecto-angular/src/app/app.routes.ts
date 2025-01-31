@@ -12,6 +12,8 @@ import { CreateComponent } from './components/create/create.component';
 
 import { ContactComponent } from './components/contact/contact.component';
 
+import { ErrorComponent } from './components/error/error.component';
+
 
 // Definir las rutas: 
 
@@ -22,8 +24,16 @@ const appRoutes: Routes = [
     {path: 'Projects', component: ProjectsComponent},
     {path: 'Create Project', component: CreateComponent},
     {path: 'Contact me', component: ContactComponent},
-    {path: '**', component: AboutmeComponent},
+    {path: '**', component: ErrorComponent},
 
 ];
 
+// Exportacion de rutas 
 
+export const appRoutesProviders: any[] = [];
+
+
+// Cargar configuracion de rutas en Angular
+
+
+export const routing: ModuleWithProviders<RouterModule> = RouterModule.forRoot(appRoutes);
