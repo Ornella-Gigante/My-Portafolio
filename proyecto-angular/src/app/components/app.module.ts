@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Route } from '@angular/router';
+import { Route} from '@angular/router';
+import { routes,appRoutesProviders } from '../app.routes';
 
 import { AppComponent } from '../app.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
@@ -22,11 +23,10 @@ import { ErrorComponent } from './error/error.component';
   ],
   imports: [
     BrowserModule,
+    routes, 
   
   ],
-  providers: [
-  
-  ],
+  providers: [appRoutesProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
