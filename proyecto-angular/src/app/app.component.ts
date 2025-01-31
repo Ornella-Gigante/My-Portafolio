@@ -5,6 +5,7 @@ import { Configuracion } from './model/configuracion';
 import { BrowserModule } from '@angular/platform-browser';
 import { Pipe} from '@angular/core';
  import { PipeTransform } from '@angular/core';
+import { ErrorComponent } from './error/error.component';
 
 @Component({
   selector: 'app-root',

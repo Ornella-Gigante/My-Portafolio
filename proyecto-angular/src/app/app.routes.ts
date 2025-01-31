@@ -4,6 +4,7 @@ import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { CreateComponent } from './components/create/create.component';
 import { ErrorComponent } from './components/error/error.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 export const routes: Routes = [
@@ -12,7 +13,7 @@ export const routes: Routes = [
     { path: 'projects', component: ProjectsComponent },
     { path: 'create', component: CreateComponent },
     { path: 'contact', component: ContactoComponent },
-    { path: '**', component: ErrorComponent },
+    { path: '**', component: ErrorComponent},
    ];
    
 export const routing = RouterModule.forRoot(routes);
