@@ -1,0 +1,27 @@
+<div>
+  <!-- Usamos (input) para escuchar el evento y actualizar el valor de userId -->
+   {{fecha | date: 'fullDate' | uppercase}}
+   <hr>
+   {{fecha | date: 'dd/MM/yy'}}
+   <hr>
+   {{4 | calculadora:2}}
+   <hr>
+  <input type="text" [value]="userId" (input)="onUserIdChange($event)" placeholder="Ingresa el ID del usuario" />
+  <button (click)="cargaUsuario()">Cargar Usuario</button>
+</div>
+
+
+<!-- Mostrar mensaje de carga -->
+<div *ngIf="isLoading">
+  <p>Cargando...</p>
+</div>
+
+<div *ngIf="user">
+  <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+  <img [src]="user.avatar" alt="Avatar" width="200"/>
+</div>
+
+<!-- Mostrar mensaje si no hay datos ni está cargando -->
+<div *ngIf="!isLoading && !user">
+  <p>No se encontraron datos para este usuario.</p>
+</div>
