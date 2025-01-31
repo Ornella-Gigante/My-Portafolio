@@ -19,14 +19,15 @@ import { ErrorComponent } from './components/error/error.component';
 
 const appRoutes: Routes = [
 
-    {path: '', component: AboutmeComponent},
-    {path: 'About Me', component: AboutmeComponent},
-    {path: 'Projects', component: ProjectsComponent},
-    {path: 'Create Project', component: CreateComponent},
-    {path: 'Contact me', component: ContactComponent},
-    {path: '**', component: ErrorComponent},
+        { path: '', component: AboutmeComponent },
+        { path: 'about-me', component: AboutmeComponent },
+        { path: 'projects', component: ProjectsComponent },
+        { path: 'create-project', component: CreateComponent },
+        { path: 'contact-me', component: ContactComponent },
+        { path: '**', component: ErrorComponent },
+    ];
+    
 
-];
 
 // Exportacion de rutas 
 
