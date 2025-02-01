@@ -35,6 +35,7 @@ body {
     padding: 0;
     display: flex;
     padding-top: 20px;
+    justify-content: center;
 }
 
 
@@ -193,6 +194,8 @@ body {
     background: rgba(red, green, blue, alpha);
     padding-top: 120px ;
     border-left: 1px solid grey;
-    position: relative;
+    position:relative;
+   
+
    
 }
