@@ -1,17 +1,26 @@
 <main class="main">
-  <div class="content">
-    <div></div>
-    <div class="left-side">
-      <h1>{{ title }}</h1>
-      <ul>
-        <li><a [routerLink]="['/about-me']" routerLinkActive="active">About me</a></li>
-        <li><a [routerLink]="['/projects']" routerLinkActive="active">Projects</a></li>
-        <li><a [routerLink]="['/create']" routerLinkActive="active">Create</a></li>
-        <li><a [routerLink]="['/contact']" routerLinkActive="active">Contact</a></li>
-      </ul>
+  <h1> </h1>
+  <header>
+    <div class="content">
+      <div class="left-side">
+        <ul>
+          <li><a [routerLink]="['/about-me']" routerLinkActive="active">About me</a></li>
+          <li><a [routerLink]="['/projects']" routerLinkActive="active">Projects</a></li>
+          <li class="logo"><a href="#">OG</a></li>
+          <li><a [routerLink]="['/create']" routerLinkActive="active">Create</a></li>
+          <li><a [routerLink]="['/contact']" routerLinkActive="active">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </header>
 
-    <!-- Aquí se renderizan los componentes según la ruta -->
-    <router-outlet></router-outlet>
-  </div>
+    <section id="content">
+       <!-- Aquí se renderizan los componentes según la ruta -->
+        <router-outlet></router-outlet>
+    </section>
+   
 </main>
+
+<footer>
+   Nella Nells's WebSite
+</footer>
