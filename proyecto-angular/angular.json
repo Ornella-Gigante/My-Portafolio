@@ -27,7 +27,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "./assets/css/styles.css"
+             
             ],
             "scripts": [],
             "server": "src/main.server.ts",
