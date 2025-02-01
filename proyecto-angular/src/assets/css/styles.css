@@ -1,83 +1,180 @@
+/* Custom Properties for easy theming */
+:root {
+    --primary-color: #3567A4;
+    --secondary-color: #FF69B4;
+    --text-color: #222;
+    --background-color: #F8F8F8;
+    --font-family-primary: 'Yanone Kaffeesatz', sans-serif;
+    --font-family-secondary: 'Finger Paint', cursive;
+}
 
-
+/* Font Face Declarations */
 @font-face {
     font-family: "yanone";
     src: url("fonts/yanone.ttf");
 }
-
 
 @font-face {
     font-family: "finger";
     src: url("fonts/finger.ttf");
 }
 
-body{
-    font-family: "yanone", Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    background: pink;
-    background: url("../img/pattern.png");
-    position: fixed ;
+/* Base Styles */
+body {
+    font-family: var(--font-family-primary), Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--background-color);
+    background-image: url("../img/pattern.png");
     background-attachment: fixed;
-
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.clearfix{
-    float: none;
-    clear: both ;
+
+.main {
+    flex: 1; /* This allows the main content to grow and fill the available space */
 }
 
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Change from sticky to fixed */
+    bottom: 0;
+    width: 100%;
+    height: 40px; /* Set a fixed height */
+    margin-bottom: 0; /* Remove margin-bottom */
+}
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-/*BARRA DE NAVEGACIÓN/HEADER*/
-
-header{
-
-    display: block;
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 90px;
-    background: rgba(53, 103, 164, 0.8);
+    background: var(--primary-color);
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/*ESTILOS DENTRO DEL HEADER */
-
-header ul{
-
-    display: block;
-    width: 750px;
-    height: inherit;
-    margin: 0px auto;
-
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 750px;
+    justify-content: space-between; /* Distribute items evenly */
+    gap: 20px; /* Add space between items */
 }
 
-header ul li{
-    display: inline-block;
-    margin: 0px auto;
+header ul li {
+    flex: 0 1 auto; /* Allow items to size based on content */
     text-align: center;
-    line-height: 90px;
 }
 
-header a{
-
+header a {
     display: block;
-    padding-right: 20px;
-    padding-left: 20px;
-    height: inherit;
+    padding: 0 30px; /* Increased horizontal padding */
+    height: 100%;
     text-decoration: none;
     color: azure;
-    transition: all 300ms;
-
-
+    transition: all 300ms ease;
 }
 
 
-header a:hover{
+header a:hover {
     background: rgba(0,0,0,0.8);
 }
 
+/* Logo Styling */
+#logo {
+    font-family: var(--font-family-secondary);
+    font-size: 40px;
+}
 
-header #logo a:hover{
+#logo a {
+    transition: color 500ms, transform 500ms;
+}
 
+#logo a:hover {
     background: transparent;
+    color: black;
+    transform: scale(1.5);
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        height: auto;
+    }
+
+    header ul {
+        flex-direction: column;
+    }
+
+    header ul li {
+        width: 100%;
+    }
+
+    header a {
+        padding: 10px 20px;
+    }
+}
+
+/* Modern Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-secondary);
+    margin-bottom: 0.5em;
+}
+
+/* Interactive Elements */
+button, .button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: var(--background-color).3s ease;
+}
+
+button:hover, .button:hover {
+    background: darken(var(--secondary-color), 10%);
+}
+
+/* Custom Cursor */
+body {
+    cursor: url('http://example.com/cursor.png'), auto;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        --text-color: #E0E0E0;
+        --background-color: #121212;
+    }
+    header {
+        background: rgba(var(--primary-color), 0.9);
+    }
+    header a {
+        color: #E0E0E0;
+    }
 }
