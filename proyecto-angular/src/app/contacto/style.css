@@ -1,0 +1,56 @@
+/* Estilos para el contenedor del formulario */
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilos para los campos del formulario */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para los mensajes de error */
+span {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón de envío */
+input[type="submit"] {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Estilos para el título */
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
