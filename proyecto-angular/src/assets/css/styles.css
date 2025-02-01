@@ -101,7 +101,7 @@ header a {
 }
 
 
-header a:hover {
+header a:hover, .activated {
     background: rgba(0,0,0,0.8);
 }
 
