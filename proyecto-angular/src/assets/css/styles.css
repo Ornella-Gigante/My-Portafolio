@@ -19,6 +19,14 @@
     src: url("fonts/finger.ttf");
 }
 
+@font-face {
+    font-family: "titilium";
+    src: url("fonts/titilium.ttf");
+}
+
+h2{
+    font-size: 35px;
+}
 /* Base Styles */
 body {
     font-family: var(--font-family-primary), Arial, Helvetica, sans-serif;

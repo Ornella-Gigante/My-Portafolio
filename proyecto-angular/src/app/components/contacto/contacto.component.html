@@ -1,6 +1,5 @@
 <h2>Contact</h2>
 <link rel="stylesheet" href="./style.css">
-
 <form #formContacto="ngForm" (ngSubmit)="onSubmit(formContacto)">
     <label for="nombre">Name</label><br/>
     <input type="text" name="nombre" #nombreRef="ngModel" [(ngModel)]="usuario.nombre" required pattern="[a-zA-Z]+" />

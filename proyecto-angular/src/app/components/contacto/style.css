@@ -5,7 +5,8 @@ form {
     padding: 40px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #3498db !important;
 }
 
 /* Estilos para los campos del formulario */
@@ -17,12 +18,14 @@ textarea {
     margin: 8px 0 20px 0;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-family: 'titilium', sans-serif;
 }
 
 /* Estilos para las etiquetas */
 label {
     font-weight: bold;
     color: #333;
+    font-family: 'titilium', sans-serif;
 }
 
 /* Estilos para los mensajes de error */
@@ -31,6 +34,7 @@ span {
     font-size: 0.9em;
     display: block;
     margin-bottom: 10px;
+    font-family: 'titilium', sans-serif;
 }
 
 /* Estilos para el botón de envío */
