@@ -8,5 +8,41 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <footer>
+    Onella Gigante®
+ </footer>
 </body>
 </html>
+
+<style>
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.main {
+    flex: 1;
+    padding-bottom: 60px; /* Espacio para el footer */
+}
+
+footer {
+    background-color: rgba(red, green, blue, alpha);
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+}
+
+#content {
+    min-height: calc(100vh - 120px); /* Altura total menos header y footer */
+    padding-bottom: 60px; /* Espacio para evitar que el contenido quede detrás del footer */
+    align-items: center;
+    align-content: center;
+}
+</style>
