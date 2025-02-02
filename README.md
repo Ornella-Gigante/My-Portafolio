@@ -1,10 +1,9 @@
 # Portfolio Angular
 
-A modern **Portfolio Web Application** built with **Angular** to showcase professional skills, projects, and services.
-The project is currently under development and will feature multiple sections such as About Me, Projects, Resume, and more.
-
-![Project Status](https://img.shields.io/badge/status-in%20progress-yellow)
-
+Welcome to my digital showcase! 
+This portfolio is crafted with Angular and powered by a seamless GitHub integration, bringing a dynamic display of my latest projects and professional journey. Featuring an intuitive interface with smooth transitions, the portfolio combines clean design with powerful functionality – from an interactive project gallery that auto-updates with my GitHub repositories to a sleek CV display and a user-friendly contact system. 
+Built with TypeScript, CSS3, and modern web practices, this portfolio reflects my commitment to creating engaging, responsive, and maintainable web applications while showcasing my evolution as a developer.
+Whether you're here to explore my projects, review my professional background, or get in touch, you'll find everything wrapped in an experience that balances professionalism with personality!
 
 
 ---
@@ -27,8 +26,6 @@ The project is currently under development and will feature multiple sections su
   - About Me
   - Projects
   - Resume
-  - Services
-  - Skills
   - Contact
 - **Reusable Components**: Each section is implemented as an Angular component.
 - **Dynamic Routing**: Smooth navigation between pages using Angular Router.
@@ -113,3 +110,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Feel free to contribute to this project by opening issues or submitting pull requests! 😊
+Built with ❤️ using Angular 19, TypeScript, and a cup of coffee ☕
