@@ -13,6 +13,8 @@ body {
     width: 100%;
     /* Add margin bottom to create space for footer */
     margin-bottom: 80px; /* Should match the footer height */
+    margin-right: auto;
+    margin-left: auto;
 }
 
 footer {
