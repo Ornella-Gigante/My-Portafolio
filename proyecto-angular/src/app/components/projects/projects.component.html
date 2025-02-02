@@ -1,1 +1,13 @@
-<p>projects works!</p>
+<!-- projects.component.html -->
+<div class="projects-container">
+    <div class="project-card" *ngFor="let project of projects">
+      <img [src]="project.image" [alt]="project.name" onerror="this.src='assets/default-project.png'">
+      <h3>{{project.name}}</h3>
+      <p>{{project.description}}</p>
+      <div class="project-links">
+        <a [href]="project.html_url" target="_blank">Ver Código</a>
+        <a [href]="project.homepage" target="_blank" *ngIf="project.homepage">Ver Demo</a>
+      </div>
+    </div>
+  </div>
+  
