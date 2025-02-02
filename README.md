@@ -110,4 +110,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 Feel free to contribute to this project by opening issues or submitting pull requests! 😊
+
+---
 Built with ❤️ using Angular 19, TypeScript, and a cup of coffee ☕
