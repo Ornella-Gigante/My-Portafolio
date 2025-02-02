@@ -1,3 +1,15 @@
+@font-face {
+    font-family: "finger";
+    src:url("/proyecto-angular/src/assets/css/fonts/titilium.ttf")
+  
+}
+
+@font-face {
+    font-family: "yanone";
+    src:url("/proyecto-angular/src/assets/css/fonts/yanone.ttf")
+    
+}
+
 article {
     max-width: 900px;
     margin: 0 auto;
@@ -5,22 +17,13 @@ article {
     background-color: white;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     border-radius: 8px;
+   
 }
 
-h2 {
-    text-align: center;
-
-}
-
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: #3498db;
+.about {
+    text-align: left;
+    font-family: "yanone", sans-serif;
+    border-bottom: 1px solid #ccc;
 }
 
 p {
@@ -28,6 +31,8 @@ p {
     color: #34495e;
     margin-bottom: 25px;
     font-size: 1.1rem;
+    font-family: "yanone", sans-serif;
+    
 }
 
 ul {
@@ -42,6 +47,7 @@ li {
     position: relative;
     color: #34495e;
     line-height: 1.6;
+   
 }
 
 li::before {
@@ -59,4 +65,21 @@ li strong {
     font-size: 1.1rem;
 }
 
+#title {
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 15px;
+    color: rgba(10, 10, 10, 0.5);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+   
+}
 
+#title h1 {
+    font-family: "titilium";
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    
+}
