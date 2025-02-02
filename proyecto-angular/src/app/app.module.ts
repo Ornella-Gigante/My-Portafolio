@@ -5,9 +5,9 @@ import { RouterModule } from '@angular/router';
 import {  provideHttpClient } from '@angular/common/http'; // Usa provideHttpClient
 import { AppComponent } from './app.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
-import { CreateComponent } from './components/create/create.component';
+import { CurriculumComponent } from './components/curriculum/curriculum.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 import { ErrorComponent } from './components/error/error.component';
 import { routes } from './app.routes';
 
@@ -17,8 +17,8 @@ import { routes } from './app.routes';
     AppComponent,
     AboutmeComponent,
     ProjectsComponent,
-    CreateComponent,
-    ContactComponent,
+    CurriculumComponent,
+    ContactoComponent,
     ErrorComponent
   ],
   imports: [
