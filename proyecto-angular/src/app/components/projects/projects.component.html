@@ -1,12 +1,15 @@
 <!-- projects.component.html -->
 <div class="projects-container">
     <div class="project-card" *ngFor="let project of projects">
-      <img [src]="project.image" [alt]="project.name" onerror="this.src='assets/default-project.png'">
+      <img 
+      [src]="project.image" 
+      [alt]="project.name" 
+      onerror="this.src='https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg'">
       <h3>{{project.name}}</h3>
       <p>{{project.description}}</p>
       <div class="project-links">
-        <a [href]="project.html_url" target="_blank">Ver Código</a>
-        <a [href]="project.homepage" target="_blank" *ngIf="project.homepage">Ver Demo</a>
+        <a [href]="project.html_url" target="_blank">Watch Code</a>
+        <a [href]="project.homepage" target="_blank" *ngIf="project.homepage">Demo</a>
       </div>
     </div>
   </div>
