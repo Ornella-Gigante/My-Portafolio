@@ -115,7 +115,7 @@ Feel free to contribute to this project by opening issues or submitting pull req
 
 ## Demo 
 
-[![Demo Video](https://i.vimeocdn.com/video/1052801546.jpg)](https://vimeo.com/1052801546)
+[![Demo Video](https://github.com/Ornella-Gigante/python-django-blog/blob/main/img.png)](https://vimeo.com/1052801546)
 
 ---
 Built with ❤️ using Angular 19, TypeScript, and a cup of coffee ☕
