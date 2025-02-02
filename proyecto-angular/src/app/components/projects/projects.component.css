@@ -1,41 +1,52 @@
-/* projects.component.css */
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-  .project-card {
-    background: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-  
-  .project-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .project-links a {
-    padding: 0.5rem 1rem;
-    background: #2c3e50;
-    color: white;
-    border-radius: 4px;
-    text-decoration: none;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: flex;           /* Añadir esto */
+  flex-direction: column; 
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.project-card h3 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.project-card p {
+  font-family: 'Titillium Web', sans-serif;
+  flex-grow: 1; 
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  margin-top: auto;  
+}
+
+.project-links a {
+  padding: 0.5rem 1rem;
+  background: #2c3e50;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
