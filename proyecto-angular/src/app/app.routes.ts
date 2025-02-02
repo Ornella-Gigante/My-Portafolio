@@ -1,5 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
-import { ContactoComponent } from './contacto/contacto.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 import { AboutmeComponent } from './components/aboutme/aboutme.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { CreateComponent } from './components/create/create.component';

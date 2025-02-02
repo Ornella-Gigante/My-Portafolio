@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactoUsuario } from '../model/contacto.usuario';
+import { ContactoUsuario } from '../../model/contacto.usuario';
 import { CommonModule, NgClass, NgIf } from '@angular/common';
 import { EmailValidator, FormsModule } from '@angular/forms';
 
